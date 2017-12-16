@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CadmusDND.ReadItems" Title="Item Details">
+    <ContentPage.Content>
+        <StackLayout Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Text="Item Id" Grid.Row="0" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center"></Label>
+                <Label Text="{Binding itemID}" Grid.Row="0" Grid.Column="1" />
+                <Label Text="Name" Grid.Row="1" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center"></Label>
+                <Label Text="{Binding name}" Grid.Row="1" Grid.Column="1" />
+                <Label Text="Description" Grid.Row="2" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center"></Label>
+                <Label Text="{Binding description}" Grid.Row="2" Grid.Column="1" />
+                <Label Text="Upgrade Attribute" Grid.Row="3" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center"></Label>
+                <Label Text="{Binding upgradeAttribute}" Grid.Row="3" Grid.Column="1" />
+                 <Label Text="Upgrade Value" Grid.Row="4" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center"></Label>
+                <Label Text="{Binding upgradeValue}" Grid.Row="4" Grid.Column="1" />
+                <Label Text="Item Creator" Grid.Row="6" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center"></Label>
+                <Label Text="{Binding creator}" Grid.Row="6" Grid.Column="1" />
+                <Label Text="Item Usage" Grid.Row="7" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center"></Label>
+                <Label Text="{Binding usage}" Grid.Row="7" Grid.Column="1" />
+                <Label Text="Item Body Part" Grid.Row="8" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center"></Label>
+                <Label Text="{Binding bodyPart}" Grid.Row="8" Grid.Column="1" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CadmusDND.BattlePage" Title="Battle">
+    <AbsoluteLayout>
+        <Label x:Name="BattleLog" TextColor="#000000" Text="" HorizontalOptions="Center" VerticalOptions="Center"
+            AbsoluteLayout.LayoutBounds="0.5, 0, 1, 0.1"
+            AbsoluteLayout.LayoutFlags="All" />
+         <BoxView Color="#EEEEEE" x:Name="BattleField" 
+            AbsoluteLayout.LayoutBounds="0.5, 0.5, 1, 0.8"
+            AbsoluteLayout.LayoutFlags="All" />
+        <Image x:Name="Char0" Source="c_warrior.png" />
+        <Image x:Name="Char1" Source="c_wizard.png" />
+        <Image x:Name="Char2" Source="c_dwarf.png" />
+        <Image x:Name="Char3" Source="c_paladin.png" />
+        <Image x:Name="Monster0" Source="m_bug.png" />
+        <Image x:Name="Monster1" Source="m_bird.png" />
+        <Image x:Name="Monster2" Source="m_alien.png" />
+        <Image x:Name="Monster3" Source="m_spy.png" />
+        <Label x:Name="Damage" TextColor="#FF0000" Text="----" IsVisible="false" HorizontalOptions="Center" VerticalOptions="Center" FontSize="24" FontAttributes="Bold" />
+        <Button x:Name="ButtonSurrender" TextColor="#EE1010" BorderWidth="1" BorderRadius="2" BorderColor="Gray" HorizontalOptions="Fill" VerticalOptions="Fill" Text="Surrender" Clicked="OnButtonClicked"
+            AbsoluteLayout.LayoutBounds="0.5, 1, 1, 0.1"
+            AbsoluteLayout.LayoutFlags="All" />
+    </AbsoluteLayout>
+</ContentPage>

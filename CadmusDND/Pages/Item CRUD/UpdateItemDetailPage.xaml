@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CadmusDND.UpdateItemDetailPage" Title="Update Item">
+     <ContentPage.Content>
+        <StackLayout Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Text="Item Id" Grid.Row="0" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center"></Label>
+                <Label Text="{Binding itemID}" Grid.Row="0" Grid.Column="1" />
+                <Label Text="Name" Grid.Row="1" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center"></Label>
+                <Entry Text="{Binding name}" Grid.Row="1" Grid.Column="1" />
+                <Label Text="Category" Grid.Row="2" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center"></Label>
+                <Entry Text="{Binding type}" Grid.Row="2" Grid.Column="1" />
+                <Label Text="Upgrade Attribute" Grid.Row="3" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center"></Label>
+                <Entry Text="{Binding upgradeAttribute}" Grid.Row="3" Grid.Column="1" />
+                 <Label Text="Upgrade Value" Grid.Row="4" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center"></Label>
+                <Entry Text="{Binding upgradeValue}" Grid.Row="4" Grid.Column="1" />
+            </Grid>
+        <Button Text="Update" HorizontalOptions="FillAndExpand" BackgroundColor="Blue" TextColor="White" Clicked="Update_Clicked" />
+            <Button Text="Cancel" HorizontalOptions="FillAndExpand" BackgroundColor="Red" TextColor="White" Clicked="Cancel_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

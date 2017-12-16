@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CadmusDND.SettingsPage">
+    <StackLayout HorizontalOptions="Center">
+        <Label Text="" />
+        <Label Text="-Item Settings-" />
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+        <Label Text="Server Item" />
+        <Switch x:Name="ItemServer" Toggled="OnToggled"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+        <Label Text="Random Item" />
+        <Switch x:Name="ItemRandom" Toggled="OnToggled"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+        <Label Text="Super Item" />
+        <Switch x:Name="ItemSuper" Toggled="OnToggled"/>
+        </StackLayout>
+        <Label Text="" />
+        <Label Text="-Debug Settings-" />
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+        <Label Text="Critical Hit" />
+        <Switch x:Name="CriticalHit" Toggled="OnToggled"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+        <Label Text="Critical Miss" />
+        <Switch x:Name="CriticalMiss" Toggled="OnToggled"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+        <Label Text="Item Usage" />
+        <Switch x:Name="ItemUsage" Toggled="OnToggled"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+        <Label Text="Magic Usage" />
+        <Switch x:Name="MagicUsage" Toggled="OnToggled"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+        <Label Text="Healing Usage" />
+        <Switch x:Name="HealingUsage" Toggled="OnToggled"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+        <Label Text="BatleEvent" />
+        <Switch x:Name="BattleEvent" Toggled="OnToggled"/>
+        </StackLayout>
+        <Label Text="" />
+        <Button Text="Restart Game" BorderWidth="2" BorderRadius="2" BorderColor="Gray" WidthRequest="130" HorizontalOptions="Center" VerticalOptions="Center" Clicked="OnButtonClicked" />     
+    </StackLayout>  
+</ContentPage>

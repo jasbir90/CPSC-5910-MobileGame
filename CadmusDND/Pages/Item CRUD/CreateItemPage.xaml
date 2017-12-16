@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CadmusDND.CreateItemPage" Title="Create Item">
+    <ContentPage.Content>
+        <StackLayout Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Text="Name" Grid.Row="0" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center"></Label>
+                <Entry Text="{Binding name}" Grid.Row="0" Grid.Column="1" />
+                <Label Text="Category" Grid.Row="1" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center"></Label>
+                <Entry Text="{Binding type}" Grid.Row="1" Grid.Column="1" />
+                <Label Text="Upgrade Attribute" Grid.Row="2" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center"></Label>
+                <Entry Text="{Binding upgradeAttribute}" Grid.Row="2" Grid.Column="1" />
+                 <Label Text="Upgrade Value" Grid.Row="3" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center"></Label>
+                <Entry Text="{Binding upgradeValue}" Grid.Row="3" Grid.Column="1" />
+            </Grid>
+            <Button Text="Save" HorizontalOptions="FillAndExpand" BackgroundColor="Blue" TextColor="White" Clicked="Save_Clicked" />
+            <Button Text="Cancel" HorizontalOptions="FillAndExpand" BackgroundColor="Red" TextColor="White" Clicked="Cancel_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

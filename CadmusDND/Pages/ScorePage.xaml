@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="CadmusDND.ScorePage" Title="Score">
+  <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="Player" FontSize="Medium" TextColor="Blue"/>
+    <Label x:Name="CharNo" />
+        <Label x:Name="Experience" />
+        <Label x:Name="Level" />
+    <Label x:Name="Gold" />
+        <Label Text="Battle" FontSize="Medium" TextColor="Blue"/>
+        <Label x:Name="BattleNo" />
+        <Label x:Name="Victory" />
+        <Label Text="Monster" FontSize="Medium" TextColor="Blue" />
+    <Label x:Name="MonterKill" />
+        <Label Text="Achievements" FontSize="Medium" TextColor="Blue"/>
+    <Label Text="" />
+    <Button Text="Tap to Continue" Clicked="OnButtonClicked" />     
+  </StackLayout>
+</ContentPage>

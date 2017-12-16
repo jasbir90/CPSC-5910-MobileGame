@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CadmusDND.ItemsPage" Title="CRUD Items">
+	<ContentPage.Content>
+        <StackLayout>
+            <Button Text="CREATE" Clicked="Create_Clicked" />
+            <Button Text="READ" Clicked="Read_Clicked" />
+            <Button Text="UPDATE" Clicked="Update_Clicked" />
+            <Button Text="DELETE" Clicked="Delete_Clicked" /> 
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

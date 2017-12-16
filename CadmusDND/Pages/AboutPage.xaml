@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CadmusDND.AboutPage">
+	<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Image Source="https://dl.dropboxusercontent.com/u/453161/18720777_10207324462469749_1829336616_o.jpg" />
+    <Label Text="CPSC-4910-SQ" />
+    <Label Text="Cadmus DND" />
+    <Label Text="by Team Cadmus" />
+    <Label Text="Frank, Crystal, Chan and Jasbir" />      
+        <Label Text="Date: 5/23/17" />
+    <Label Text="" />
+    <Button Text="Return to Main Menu" Clicked="OnButtonClicked" />     
+  </StackLayout>
+</ContentPage>
